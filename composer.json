@@ -1,0 +1,13 @@
+{
+    "name": "library/utils",
+    "authors": [
+        {
+            "name": "world-one",
+            "email": "worldone85@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"library\\": "src/library"}
+    }
+}
