@@ -1,10 +1,10 @@
-#php library
+# php library
 
 - Utils
 - ResultToJson
 - RssFeed(test)
 
-###composer.json
+### composer.json
 add 'repositories'
 ```
 {
@@ -37,9 +37,9 @@ add 'repositories'
 $comopser install
 ```
 
-###Utils
+### Utils
 
-####use
+#### use
 ```
 use Wo\Utils;
 
@@ -52,7 +52,7 @@ or
 Utils::paramsCheck( $req, ['name','phone','password'], -4 );
 ```
 
-####result / error message
+#### result / error message
 
 ```
 return true;
@@ -68,9 +68,9 @@ or
 }
 ```
 
-###ResultToJson
+### ResultToJson
 
-####use
+#### use
 ```
 use Wo\ResultToJson;
 
@@ -84,7 +84,7 @@ or
 ResultToJson::success([ 'a', 'b', 'c' ]);
 ```
 
-####result / error message
+#### result / error message
 ```
 {
     "success": true,
