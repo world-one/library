@@ -1,13 +1,14 @@
 {
-    "name": "library/utils",
+    "name": "Wo/library",
+    "description": "my utilities",
     "authors": [
         {
             "name": "world-one",
-            "email": "worldone85@gmail.com"
+            "email": "worldone.dev@gmail.com"
         }
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"library\\": "src/library"}
+        "psr-4": {"Wo\\": "src/Wo"}
     }
 }
