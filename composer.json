@@ -1,13 +1,17 @@
 {
     "name": "Wo/library",
     "description": "my utilities",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "world-one",
             "email": "worldone.dev@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "^7.2"
+    },
     "autoload": {
         "psr-4": {"Wo\\": "src/Wo"}
     }
