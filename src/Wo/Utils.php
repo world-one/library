@@ -1,8 +1,8 @@
 <?php
 namespace Wo;
 use Wo\ResultToJson;
-class Utils
-{
+class Utils{
+  
   public static function paramsCheck($params=[], $keys = [], $errCode = -1)
   {
     $return = new ResultToJson();
