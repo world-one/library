@@ -2,12 +2,12 @@
 namespace Wo;
 use Wo\ResultToJson;
 class Utils{
-  
+
   public static function paramsCheck($params=[], $keys = [], $errCode = -1)
   {
     $return = new ResultToJson();
 
-    if(empty( $keys )) return $return->error( $errCode, 'Empty Keys' );
+    if(empty( $keys )) $return->error( $errCode, 'Empty Keys' );
 
     $notExist = '';
     $emptyValue = '';
@@ -21,8 +21,8 @@ class Utils{
       }
     } 
     
-    if(!empty($notExist)) return $return->error( $errCode, 'require parameter '.$notExist.' not exist' );
-    if(!empty($emptyValue)) return $return->error( $errCode, 'require parameter '.$emptyValue.' value empty' );
+    if(!empty($notExist)) $return->error( $errCode, 'require parameter '.$notExist.' not exist' );
+    if(!empty($emptyValue)) $return->error( $errCode, 'require parameter '.$emptyValue.' value empty' );
     
     return true;
     
